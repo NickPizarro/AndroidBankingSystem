@@ -1,9 +1,3 @@
-Contact Information:
-Name: Wen Zhou
-Class: CSC 296
-Lab Session: 2016Summer MTW 16:30~18:45
-Assignment Number: Project 02
-Partner: Zhengliang Jiang
 
 [Class Designs]:
 -model package: contains the three models(user,account,transaction) that are used in this application, and an Id generator.
@@ -21,9 +15,4 @@ Partner: Zhengliang Jiang
 2. Click the item on account list to access the transaction history.
 
 
-[Extra Credit]:
-1. Use recycler view to show accounts list and transaction history.
-2. I think the layouts look pretty good.
-
-   
--I affirm that I have not given or received any unauthorized help on this assignment, and that this work is my own. Wen Zhou 06/13/2016
+Wen Zhou 06/13/2016
