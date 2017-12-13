@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project2.bankingsystem.transaction.TransferFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:paddingTop="20sp"
+        android:paddingBottom="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#2535a6">
+
+        <TextView
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transfer"
+            android:gravity="center"
+            android:paddingBottom="10sp"
+            android:paddingTop="10sp"
+            android:textColor="#FFF"
+            />
+        <TextView
+            android:textSize="20sp"
+            android:background="#007"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="38sp"
+            android:gravity="center_vertical"
+            android:text="From"/>
+        <TextView
+            android:id="@+id/transfer_source_id"
+            android:textSize="20sp"
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="38sp"
+            android:gravity="center_vertical"
+            tools:hint="source id"/>
+        <TextView
+            android:textSize="20sp"
+            android:background="#007"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="38sp"
+            android:gravity="center_vertical"
+            android:text="To"/>
+        <EditText
+            android:id="@+id/transfer_destination_id"
+            android:textSize="20sp"
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="38sp"
+            android:gravity="center_vertical"
+            android:hint="Enter destination account id"/>
+        <TextView
+            android:textSize="20sp"
+            android:background="#007"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="38sp"
+            android:gravity="center_vertical"
+            android:text="Amount $"/>
+        <EditText
+            android:id="@+id/transfer_amount"
+            android:layout_width="match_parent"
+            android:layout_height="38sp"
+            android:hint="Enter amount"
+            android:background="#FFF"/>
+        <Button
+            android:id="@+id/transfer_ok"
+            android:layout_width="match_parent"
+            android:layout_height="38sp"
+            android:text="@string/ok"
+            android:background="#007"
+            android:textColor="#FFF"/>
+        <TextView
+            android:id="@+id/transfer_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:hint="message"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project2.bankingsystem.transaction.WithdrawalFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:paddingTop="20sp"
+        android:paddingBottom="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#2535a6">
+
+        <TextView
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Withdrawal"
+            android:gravity="center"
+            android:paddingBottom="10sp"
+            android:paddingTop="10sp"
+            android:textColor="#FFF"
+            />
+        <TextView
+            android:textSize="20sp"
+            android:background="#007"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="38sp"
+            android:gravity="center_vertical"
+            android:text="Amount $"/>
+        <EditText
+            android:id="@+id/withdrawal_amount"
+            android:layout_width="match_parent"
+            android:layout_height="38sp"
+            android:hint="Enter amount"
+            android:background="#FFF"/>
+        <Button
+            android:id="@+id/withdrawal_ok"
+            android:layout_width="match_parent"
+            android:layout_height="38sp"
+            android:text="@string/ok"
+            android:background="#007"
+            android:textColor="#FFF"/>
+        <TextView
+            android:id="@+id/withdrawal_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:hint="message"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+
+</LinearLayout>

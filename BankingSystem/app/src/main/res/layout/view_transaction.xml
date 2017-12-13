@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10sp"
+    android:paddingLeft="10sp"
+    android:paddingBottom="10sp"
+    android:paddingRight="10sp"
+    android:background="@drawable/border">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/transaction_list_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:hint="Deposit"
+            android:textSize="22sp"/>
+        <TextView
+            android:id="@+id/transaction_list_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:hint="2016/01/01"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/transaction_list_sign"
+            android:text="+"
+            android:textSize="35sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:textSize="35sp"/>
+        <TextView
+            android:id="@+id/transaction_list_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:hint="100"
+            android:textSize="35sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

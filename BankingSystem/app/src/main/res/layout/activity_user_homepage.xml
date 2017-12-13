@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="project2.bankingsystem.UserHomepageActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, "
+            android:textSize="20sp"
+            android:textColor="#2a41ac"/>
+        <TextView
+            android:id="@+id/tv_hp_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:hint="FirstName"
+            android:textSize="20sp"
+            android:textColor="#008"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:paddingBottom="5sp"
+        android:layout_width="100sp"
+        android:layout_height="40sp"
+        android:src="@drawable/logo"
+        android:layout_above="@+id/ll_info"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/ll_info"
+        android:layout_below="@id/ll_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#2a41ac">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="30sp"
+            android:text="User Information"
+            android:textColor="#FFF"
+            android:background="#008"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:paddingLeft="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username: "
+                android:textColor="#FFF"/>
+
+            <TextView
+                android:paddingLeft="28sp"
+                android:id="@+id/tv_hp_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                tools:hint="username"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name: "
+                android:textColor="#FFF"/>
+
+            <TextView
+                android:paddingLeft="23sp"
+                android:id="@+id/tv_hp_firstname2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:hint="firstname"
+                android:textColor="#FFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Middle Name: "
+                android:textColor="#FFF"/>
+
+            <TextView
+                android:paddingLeft="8sp"
+                android:id="@+id/tv_hp_middlename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:hint="middlename"
+                android:textColor="#FFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingLeft="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name: "
+                android:textColor="#FFF"/>
+
+            <TextView
+                android:paddingLeft="25sp"
+                android:id="@+id/tv_hp_lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:hint="lastname"
+                android:textColor="#FFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/button_add_account"
+        android:layout_below="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:text="Add New Account +"
+        android:background="#008"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"/>
+
+    <FrameLayout
+        android:layout_below="@+id/button_add_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl_account_list">
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>
