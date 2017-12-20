@@ -29,6 +29,7 @@
             android:id="@+id/et_enter_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="text"
             android:hint="Enter your username"/>
 
         <EditText
