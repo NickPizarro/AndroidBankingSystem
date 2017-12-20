@@ -23,7 +23,7 @@
         android:background="#FFF"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="58dp">
+        android:layout_marginBottom="200dp">
 
         <EditText
             android:id="@+id/et_enter_username"
@@ -58,11 +58,10 @@
     </LinearLayout>
 
     <ImageView
-        android:paddingBottom="65sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/logo"
-        android:layout_above="@+id/ll_log_in"/>
+        android:gravity = "center"
+        android:src="@drawable/logo" />
 
     <TextView
         android:layout_alignParentBottom="true"
