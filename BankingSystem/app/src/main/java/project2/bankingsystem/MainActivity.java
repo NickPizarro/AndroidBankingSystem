@@ -59,10 +59,14 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                 }else{
-                    mLogInMessage.setText("Username does not exist, pleas register.");
+                    mLogInMessage.setText("Username does not exist, please register.");
                 }
             }
         });
 
+    }
+
+    public void onBackPressed(){
+        moveTaskToBack(true);
     }
 }
