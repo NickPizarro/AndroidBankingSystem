@@ -37,6 +37,7 @@
         //This section of code is for viewing the password
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
             app:passwordToggleEnabled="true"
             app:passwordToggleTint="@color/colorAccent">
